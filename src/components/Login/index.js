@@ -30,15 +30,15 @@ class Login extends Component {
     const {username} = this.state
     return (
       <>
-        <label className="input-label" htmlFor="username">
+        <label className='input-label' htmlFor='username'>
           USERNAME
         </label>
         <input
-          type="text"
+          type='text'
           value={username}
-          className="input-field"
-          id="username"
-          placeholder="thoufiq"
+          className='input-field'
+          id='username'
+          placeholder='thoufiq'
           onChange={this.onChangeUsername}
         />
       </>
@@ -49,15 +49,15 @@ class Login extends Component {
     const {password} = this.state
     return (
       <>
-        <label className="input-label" htmlFor="password">
+        <label className='input-label' htmlFor='password'>
           PASSWORD
         </label>
         <input
-          type="password"
+          type='password'
           value={password}
-          className="input-field"
-          id="password"
-          placeholder="thoufiq@2024"
+          className='input-field'
+          id='password'
+          placeholder='thoufiq@2024'
           onChange={this.onChangePassword}
         />
       </>
@@ -110,25 +110,25 @@ class Login extends Component {
     const jwtToken = Cookies.get('jwt_token')
 
     if (jwtToken !== undefined) {
-      return <Redirect to="/" />
+      return <Redirect to='/' />
     }
 
     return (
-      <div className="login-form-bg-container">
-        <form className="login-container" onSubmit={this.submitForm}>
+      <div className='login-form-bg-container'>
+        <form className='login-container' onSubmit={this.submitForm}>
           <img
-            src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-            alt="website logo"
-            className="website-logo-img"
+            src='https://assets.ccbp.in/frontend/react-js/logo-img.png'
+            alt='website logo'
+            className='website-logo-img'
           />
-          <div className="input-container">
+          <div className='input-container'>
             {this.renderUsernameField()}
             {this.renderPasswordField()}
           </div>
-          <button type="submit" className="login-btn">
+          <button type='submit' className='login-btn'>
             Login
           </button>
-          {showSubmitErrorMsg && <p className="error-message">*{errorMsg}</p>}
+          {showSubmitErrorMsg && <p className='error-message'>*{errorMsg}</p>}
         </form>
       </div>
     )
