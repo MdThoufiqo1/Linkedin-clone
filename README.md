@@ -1,4 +1,4 @@
-<h1>Jobby App<h1/>
+Jobby App
 
 Constructed an all-in-one job searching platform, Jobby App.
 
