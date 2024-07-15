@@ -1,4 +1,4 @@
-# Jobby App
+# LinkedIn-clone
 
 Constructed an all-in-one job searching platform, Jobby App.
 
